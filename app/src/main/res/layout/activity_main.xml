@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ling.ours.MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/ic_main2"/>
+        <ImageView
+            android:id="@+id/image_main"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="70dp"
+            android:background="@mipmap/ic_yl_heart" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="30sp"
+            android:textColor="#FFF"
+            android:layout_alignBottom="@id/image_main"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/image_main"/>
+        <EditText
+            android:id="@+id/edit_username"
+            android:layout_width="match_parent"
+            android:layout_marginTop="130dp"
+            android:background="@null"
+            android:hint="请输入账号"
+            android:textCursorDrawable="@drawable/textcussor"
+            android:textColorHint="#fff"
+            style="@style/padding50px"
+            android:layout_height="40dp" />
+        <View
+            android:layout_width="match_parent"
+            style="@style/padding50px"
+            android:background="#fff"
+            android:layout_below="@+id/edit_username"
+            android:layout_height="1dp"/>
+        <EditText
+            android:id="@+id/edit_password"
+            android:layout_width="match_parent"
+            android:layout_marginTop="180dp"
+            style="@style/padding50px"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:textCursorDrawable="@drawable/textcussor"
+            android:textColorHint="#fff"
+            android:background="@null"
+            android:layout_height="40dp" />
+        <View
+            android:layout_width="match_parent"
+            style="@style/padding50px"
+            android:background="#fff"
+            android:layout_below="@+id/edit_password"
+            android:layout_height="1dp"/>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            style="@style/padding50px"
+            android:text="登     录"
+            android:layout_below="@+id/edit_password"
+            android:background="@drawable/ic_bluebackbutton"
+            android:layout_height="40dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="登录就说明你同意了"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:textColor="#fff" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ic_pink">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <Button
+                android:id="@+id/you_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="你"
+                android:layout_weight="1.0"/>
+            <Button
+                android:id="@+id/me_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="我"
+                android:layout_weight="1.0"/>
+            <Button
+                android:id="@+id/our_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="我们"
+                android:layout_weight="1.0"/>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ViewFlipper
+                android:id="@+id/ViewFlipper1"
+                android:layout_width="match_parent"
+                android:inAnimation="@anim/left_in"
+                android:outAnimation="@anim/left_out"
+                android:flipInterval="3000"
+                android:layout_height="150dp">
+            </ViewFlipper>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignBottom="@id/ViewFlipper1"
+                android:layout_marginBottom="10dp">
+                <ImageView
+                    style="@style/dots"/>
+                <ImageView
+                    style="@style/dots" />
+                <ImageView
+                    style="@style/dots" />
+                <ImageView
+                    style="@style/dots" />
+                <ImageView
+                    style="@style/dots" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/past_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="过去"/>
+            <TextView
+                android:id="@+id/now_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1.0"
+                android:text="现在"/>
+            <TextView
+                android:id="@+id/future_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1.0"
+                android:text="未来"/>
+        </LinearLayout>
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

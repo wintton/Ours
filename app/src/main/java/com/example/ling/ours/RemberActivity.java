@@ -30,6 +30,7 @@ public class RemberActivity extends Activity {
 
             }
         });
+
     }
 
     private void init() {
